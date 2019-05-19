@@ -7,19 +7,22 @@ package optional;
 class Microwave {
 	private int cookTime;
 	Popcorn thingToBeCooked;
-
+	String flavour;
+	
 	Microwave() {
 		System.out.println("Microwave says: a Microwave has been made.");
 	}
 
-	void putInMicrowave(Popcorn thingToBeCooked) {
-		System.out.println("Microwave says: popcorn put in microwave.");
+	void putInMicrowave(Popcorn thingToBeCooked,String flavour) {
 		this.thingToBeCooked = thingToBeCooked;
+		this.flavour = flavour;
+		System.out.println("Microwave says: popcorn with " + flavour +" are put in microwave.");
+		
 	}
 
 	void setTime(int cookTimeInMinutes) {
-		System.out.println("Microwave says: cook time is set to " + cookTime + " minutes.");
 		this.cookTime = cookTimeInMinutes;
+		System.out.println("Microwave says: cook time is set to " + cookTime + " minutes.");
 	}
 
 	void startMicrowave() {
@@ -59,6 +62,17 @@ public class Popcorn {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Popcorn popcorn = new Popcorn ("Sea salt");
+		
+		Microwave microwave = new Microwave();
+		
+		microwave.putInMicrowave(popcorn, "Sea salt");
+		microwave.setTime(3);
+		microwave.startMicrowave();
 	}
 	
 }
