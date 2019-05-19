@@ -27,10 +27,15 @@ public class HarryPotter {
 
 	public static void main(String[] args) {
 		// 1. make harry potter
+		HarryPotter harryP = new HarryPotter();
 		// 2. become invisible
+		harryP.makeInvisible(true);
 		// 3. spy on professor snape
+		harryP.spyOnSnape();
 		// 4. become visible again
-		// 5. cast a “stupefy” spell
+		harryP.makeInvisible(false);
+		// 5. cast a â€œstupefyâ€� spell
+		harryP.castSpell("abraKadabra");
 	}
 
 }
