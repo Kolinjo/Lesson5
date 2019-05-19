@@ -5,17 +5,17 @@ import org.junit.Test;
 
 public class TeaPartyTest {
 	/**
-	 * Jane Austen is a women, so say ‚ÄúHello Ms. Austen‚Äù. 
-	 * George Orwell is a man, so say ‚ÄúHello Mr. Orwell‚Äù. 
+	 * Jane Austen is a women, so say ìHello Ms. Austenî. 
+	 * George Orwell is a man, so say ìHello Mr. Orwellî.  
 	 * Isaac Newton was knighted, so say "Hello Sir Newton".
 	 **/
 
-//	@Test
-//	public void test() {
-//		TeaParty teaParty = new TeaParty();
-//		String greeting = teaParty.welcome(null, false, false);
-//		assertEquals("Hello Ms. Austen", teaParty.welcome("Austen", true, false));
-//		assertEquals("Hello Mr. Orwell", teaParty.welcome("Orwell", false, false));
-//		assertEquals("Hello Sir Newton", teaParty.welcome("Newton", false, true));
-//	}
+	@Test
+	public void test() {
+		TeaParty teaParty = new TeaParty();
+		String greeting = teaParty.welcome(null, false, false);
+		assertEquals("Hello Ms. Austen", teaParty.welcome("Austen", true, false));
+		assertEquals("Hello Mr. Orwell", teaParty.welcome("Orwell", false, false));
+		assertEquals("Hello Sir Newton", teaParty.welcome("Newton", false, true));
+	}
 }
