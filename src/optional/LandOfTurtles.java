@@ -9,8 +9,23 @@ public class LandOfTurtles {
 		MultiTurtlePanel panel = new MultiTurtlePanel();
 		String galapagosIslands = "https://farm2.staticflickr.com/1104/752631367_5c5d474ba5_o.jpg";
 
-		// 1. Instantiate a JFrame object & make it visible
+		
+		JFrame jframe = new JFrame();
+		jframe.setVisible(true);
+		
+		jframe.getContentPane().add(panel);
+		panel.setBackgroundImage(galapagosIslands);
+		jframe.setSize(600, 400);
+		
+		Turtle turtle = new Turtle ();
+		panel.addTurtle(turtle);
+		
+		for (int i = 1; i <= 50; i++) {
+			panel.addTurtle(turtle);
+			//haven't finished...still to come
+		}
 
+		// 1. Instantiate a JFrame object & make it visible
 		// 2. Add the panel to the frame
 
 		// 3. Set the background image of the panel to the Galapagos Islands
