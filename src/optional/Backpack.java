@@ -15,6 +15,22 @@ public class Backpack {
 		/* Your mission is to get to school, but first you need to get all of your supplies into your backpack. */
 
 
+		Backpack backpack = new Backpack();
+		
+		Pencil pencil =  new Pencil();	
+		backpack.putInBackpack(pencil);
+		pencil.write("Now, I can learn how to write!");
+		
+		Ruler ruler = new Ruler ();
+		backpack.putInBackpack(ruler);
+		ruler.measure();
+		
+		Textbook textbook = new Textbook();
+		backpack.putInBackpack(textbook);
+		textbook.read();
+		
+		backpack.goToSchool();
+		
 
 	}
 	
@@ -37,7 +53,7 @@ public class Backpack {
 		if(pencil == null || ruler == null || textbook == null){
 			System.err.println("You are not ready for School");
 		}else{
-			System.out.println("Congratulations! You are ready for school");
+			System.out.println("Congratulations! You are ready for school.");
 		}
 	}
 }
