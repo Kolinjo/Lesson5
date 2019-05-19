@@ -1,7 +1,7 @@
 package optional;
 
 /*
- * 1. In a Runner class, make a SeaCreature called “Spongebob”. Use the methods below to make him eat, and laugh.
+ * 1. In a Runner class, make a SeaCreature called â€œSpongebobâ€�. Use the methods below to make him eat, and laugh.
  * 2. Make Patrick and Squidward and print their name, have them eat, and make them laugh.
  */
 
@@ -13,8 +13,21 @@ import javax.sound.sampled.Clip;
 public class SeaCreature {
 	
 	public static void main(String[] args) {
-		SeaCreature spong = new SeaCreature("squidward");
-		spong.laugh();
+		
+		SeaCreature spong1 = new SeaCreature("spongebob");
+		System.out.println(spong1.getName());
+		spong1.eat();
+		spong1.laugh();
+		
+		SeaCreature spong2 = new SeaCreature("Squidward");
+		System.out.println(spong2.getName());
+		spong2.eat();
+		spong2.laugh();
+		
+		SeaCreature spong3 = new SeaCreature("Patrick");
+		System.out.println(spong3.getName());
+		spong3.eat();
+		spong3.laugh();
 	}
 
 
