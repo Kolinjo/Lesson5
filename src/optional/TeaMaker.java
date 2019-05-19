@@ -3,6 +3,21 @@ package optional;
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea using the classes below */
+	
+	public static void main(String[] args) {
+		TeaBag teabag = new TeaBag("mint");
+		TeaBag teabag1 = new TeaBag("Green");
+		
+		Kettle kettle = new Kettle();
+		kettle.getWater();		
+		kettle.boil();
+		
+		Cup cup = new Cup();
+		Cup cup1 = new Cup();
+		
+		cup.makeTea(teabag, kettle.getWater());
+		cup1.makeTea(teabag1, kettle.getWater());
+	}
 
 }
 
